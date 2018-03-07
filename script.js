@@ -31,6 +31,7 @@
                 alert($scope.secondMessage);
             }, 2000);
 
-            // Be aware that if the timeout was called in the second place the digest could be also updated
+            // Be aware that if the $timeout was called at the second place the digest could be also updated
+            // That means both messages will be updated despite the use of setTimeout.
         }
 })(window.angular);
